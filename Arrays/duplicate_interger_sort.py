@@ -2,7 +2,7 @@ from typing import List
 
 class Solution:
     def hasDuplicate(self, nums: List[int]) -> bool:
-        nums.sort() 
+        nums.sort() # sort it as 1, 2,3,3 ,4 then comparies in pair
         for i in range(len(nums) - 1):
             if nums[i] == nums[i + 1]:  
                 return True

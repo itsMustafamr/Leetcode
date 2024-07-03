@@ -3,8 +3,10 @@
 from typing import List
 
 class Solution:
-    def hasDuplicate(self, nums: List[int]) -> bool:
+    def hasDuplicate(self, nums: List[int]) -> bool:     #gives the nums collumn a list type from typing
         seen = set()
+        #here we make a hashset in which we add elements as we read and then if we encounter 
+        # a duplicate then we stop and then returns the true message 
         for num in nums:
             if num in seen:
                 return True

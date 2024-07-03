@@ -1,3 +1,5 @@
+#runtime - o(n^2)
+
 from typing import List
 
 class Solution:
@@ -10,8 +12,15 @@ class Solution:
             
         return False
 
-sol = Solution()
-in_value = input("enter values in list")
-num = list(in_value.split())
-result = sol.hasDuplicate(num)
-print("result of duplicate numbers", result)
+# sol = Solution()
+# in_value = input("enter values in list")
+# num = list(in_value.split())
+# result = sol.hasDuplicate(num)
+# print("result of duplicate numbers", result)
+
+a = Solution()
+val = input("values of list")
+# num = list(split(val))
+num = list(val.split())
+result = a.hasDuplicate(num)
+print("duplicate list",result)
