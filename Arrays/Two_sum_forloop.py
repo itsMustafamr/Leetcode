@@ -17,5 +17,3 @@ target = int(input("Enter the target number: "))
 
 result = solution.twoSum(nums, target)
 print(f"The indices are: {result}")
-
-Print("hurray")
