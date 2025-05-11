@@ -24,3 +24,4 @@ num = list(input_value.split())
 
 result = sol.hasDuplicate(num)
 print("does numbers have duplicate", result)
+print(num)
