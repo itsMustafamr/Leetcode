@@ -2,6 +2,7 @@
 # time - o(nlog(n))
 # space - o(1) - no extra space
 from typing import List
+#2nd best way
 
 class Solution:
     def hasDuplicate(self, nums: List[int]) -> bool:
@@ -16,6 +17,7 @@ class Solution:
             if nums[i] == nums[i + 1]:  
                 return True
         return False
+    
 
 sol = Solution()
 input_value = input("Enter a list of numbers with spaces")

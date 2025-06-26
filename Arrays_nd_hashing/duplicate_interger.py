@@ -4,6 +4,7 @@
 #runtime - o(n)
 #space - o(n) as we have to create a hashset and memory of hashset is O(n) ie size of array
 from typing import List
+#best way
 
 class Solution:
     def hasDuplicate(self, nums: List[int]) -> bool:     #gives the nums collumn a list type from typing

@@ -1,6 +1,7 @@
 #anagram is a word or phrase formed by rearranging the letters of a different word or phrase
 #typically, usuing all the letters are rearranged to form the original word
 # eg. car and arc are anagrams 
+# worst way
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         s = sorted(s)

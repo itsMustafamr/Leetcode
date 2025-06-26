@@ -1,6 +1,6 @@
 from typing import List
 #runtime of n^2
-
+#easy way
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         for i in range(len(nums)):

@@ -2,6 +2,7 @@
 #space - o(1) - no extra memory needed
 
 from typing import List
+#worst way
 
 class Solution:
     def hasDuplicate(self, nums: List[int]) -> bool:

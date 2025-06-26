@@ -1,5 +1,7 @@
 #cheating basically. counter is a datastructure in python which is a hashmap which counts things automatically for you 
 
+# 2nd best way
+
 from collections import Counter
 
 class Solution:

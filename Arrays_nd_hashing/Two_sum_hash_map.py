@@ -6,6 +6,11 @@ from typing import List
 # then we find its true
 # so we can do it in O(n)
 # space - O(n)
+
+
+#enumerate(nums) allows you to loop over the list with both the index and the value.
+
+
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         prevMap = {} # ie maping of val : index - ie every previous element will be stored here in the hashmap
