@@ -1,0 +1,69 @@
+Neetcode notes
+
+Data structure - structuring data inside ram(where all our data is stored). 
+ram measured in bytes
+1 byte - 8 bits
+bit - postion that can store a digit. bit only takes in 0’s and 1’s.
+int is stored as 4 bytes = 4*8  = 32bits
+
+array - contigious block of data
+every block of data has value and their respective addresses
+
+array operations (most common) - read and write data
+array has indexes that automatically maps to a location or addresses on ram and read the memory.(in the below case goes to address $0 and reads value 1)
+
+this is done in O(1) - constant time
+RAM(random access momory) - randomly access any point in the memory in constant time.
+
+first index - 0 then 1, 2,…
+arrays always starts with 0.
+
+static array - fixed size array. not contigous ( cant extent the size of the array ). cannot deallocate or remove an element in an array.
+
+dynamic array - used these days
+
+inserting an element at the middle - O(n)
+n is the number of elements in the array or length of the array. (not the size of the array)
+
+RUNTIME
+
+Static array fixed size. so for fixing that we create a dynamic array. we don’t have to specify the size. (gets assigned a default size)
+
+adding element to the array is called pushing to the array. each element is tracked using a pointer to tell which position we are in.
+
+
+when in this case array size 3 is full then a brand new array is created by doubling the size of array. so all of the original values is getting copied to the new index. (this is how space problem is solved)
+
+double the capacity -> will make it a amortized capacity.
+n <= 2.N -> O(2.n) = O(n)…. 15 <= 16 (we double the size always)
+Stack - 3 operations. push, pop and peeking at the last element. 
+
+we do not need to initialize a full data structure from scratch cuz dynamic array meets all the requirements already.
+LIFO - last in first out.
+
+we can use a stack to reverse a sequence. cuz 1, 2, 3… removed out as 3, 2, 1.
+
+Hashmap/hashset
+	⁃	when there is a chance of collision on hashmap we take the size and roughly double it….when the array is half full
+	⁃	then move the previous element use of “rehashing” to put it to the new location with new size eg: alice -> ascii -> 33 % 4 -> location 1
+	⁃	we can resize the array more so that there is a lesser chance of collision or we could go for better way of handling collision -> 1. at every index instead of storing a single pair (key, value) in a index we can store mutliple pairs occuping the same index (this approach is called chaining) 2. open addressing apprach - we kind of losely define the postion a key should go at. eg collin - 33 -> 33%2 - 1 then if the location is occupied then we go and try for the next location ie index + 1 then if we do get 33%2  = 1 then we do go next location if not found at location 1….
+	⁃	ord(c) -> convert a number into ascii 
+
+Prefix sum
+(prefix - starting at the beginning)
+sum of the sub array basically
+
+prefix product - we use product instead of sum….
+	
+postfix - starting at the end
+are two sides of the same coin - post and prefix
+
+prefix usage - o(1) run time - data strucuture that can query the sum of subarray of the values. ( given a array of values )
+
+usually a single array is given as input
+
+we get -> rangesum (basically) for pre/post fix
+
+
+here 1-1  = 0 gives the range of the subarray in the above case
+
