@@ -1,6 +1,7 @@
 from typing import List
 from collections import Counter
 
+#best way
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         count = {}

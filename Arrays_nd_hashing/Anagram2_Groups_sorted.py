@@ -1,6 +1,7 @@
 #from typing import List
 from collections import defaultdict
 
+# good way
 class Solution:
     def groupAnagrams(self, strs):
         anagrams = defaultdict(list)

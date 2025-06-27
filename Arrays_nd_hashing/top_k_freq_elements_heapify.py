@@ -1,6 +1,7 @@
 from typing import List
 import heapq
 
+# 2nd way mentioned by neetcode
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         # Step 1: Count the frequency of each element

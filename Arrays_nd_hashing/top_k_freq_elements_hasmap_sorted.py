@@ -1,5 +1,7 @@
 from typing import List
 
+# good way
+
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         # Step 1: Count the frequency of each element

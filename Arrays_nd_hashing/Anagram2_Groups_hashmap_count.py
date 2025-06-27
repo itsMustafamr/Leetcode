@@ -1,5 +1,6 @@
 from collections import defaultdict
 
+#best way
 class Solution:
     def groupAnagrams(self, strs):
         anagrams = defaultdict(list)
