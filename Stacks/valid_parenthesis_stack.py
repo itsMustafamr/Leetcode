@@ -14,7 +14,7 @@ class Solution:
             else: 
                 stack.append(char)
         # return True if not stack else False
-        return not stack
+        return stack == []   # or return not stack  (best practice)
         #Stack should be empty if all brackets are matched
     
 s = "{[()()]}"
